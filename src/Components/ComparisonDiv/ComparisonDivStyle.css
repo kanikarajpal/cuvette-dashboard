@@ -1,0 +1,51 @@
+.comparisonDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  /* width: 100%; */
+  border-radius: 10px;
+  border: 1px solid var(--light-grey);
+  padding: 2rem 2rem 0.5rem 2rem;
+}
+.comparisonUpperDiv {
+  width: 100%;
+  display: flex;
+}
+.leftComparisonDiv {
+  width: 70%;
+  text-align: left;
+}
+.rightComparisonDiv {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 30%;
+}
+.comparisonHeading {
+  text-align: left;
+  font-weight: var(--bold);
+  font-size: var(--md);
+  color: var(--primary-text);
+}
+.comparisonText {
+  color: var(--grey);
+  font-weight: var(--md);
+  font-size: var(--sm);
+}
+.bold-text {
+  font-weight: var(--bold);
+  color: var(--grey);
+}
+.image-div {
+  border-radius: 50%;
+  background-color: var(--lightest-grey);
+  height: 3rem;
+  width: 3rem;
+  object-fit: contain;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--light-grey);
+}
+.statIcon {
+  margin-top: 0.75rem;
+}

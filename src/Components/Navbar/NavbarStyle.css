@@ -1,0 +1,30 @@
+.containerDiv {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--light-grey);
+}
+.img {
+  height: 2rem;
+  margin: 1.75rem 2.5rem;
+  cursor: pointer;
+}
+.lowerDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0rem 1rem;
+  margin: 1.5rem 3.5rem;
+  gap: 0.75rem;
+  color: var(--primary-text);
+  font-weight: var(--bold);
+  cursor: pointer;
+  border-radius: 0.6rem;
+  border: 1.5px solid var(--light-grey);
+}
+.imageDiv {
+  height: 1.625rem;
+  width: 1.625rem;
+  border-radius: 50%;
+}

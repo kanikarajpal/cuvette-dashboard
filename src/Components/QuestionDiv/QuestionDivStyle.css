@@ -1,0 +1,33 @@
+.QuestionsDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  border-radius: 10px;
+  border: 1px solid var(--light-grey);
+  padding: 2rem 2rem 0 2rem;
+}
+
+.QuestionsDivHeading {
+  text-align: left;
+  font-weight: var(--bold);
+  font-size: var(--md);
+  color: var(--primary-text);
+}
+
+.QuestionsUpperDiv {
+  display: flex;
+  justify-content: space-between;
+}
+
+.quesDiv {
+  font-size: var(--normal);
+  font-weight: var(--bold);
+  color: var(--blue);
+}
+.middleDiv {
+  color: var(--grey);
+  font-weight: var(--md);
+  font-size: var(--sm);
+  text-align: left;
+}

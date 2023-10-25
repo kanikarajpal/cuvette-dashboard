@@ -1,0 +1,32 @@
+.upperSkillDiv {
+  font-size: var(--xs);
+  color: var(--grey);
+  font-weight: var(--thin);
+  width: 100%;
+  text-align: left;
+}
+.lowerSkillDiv {
+  display: flex;
+  /* width: 100%; */
+  gap: 2rem;
+}
+.containerBox {
+  padding: 1rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1.5rem;
+}
+
+.mainLeftDiv,
+.mainRightDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.mainLeftDiv {
+  width: 60%;
+}
+.mainRightDiv {
+  width: 40%;
+}

@@ -1,0 +1,44 @@
+.skillsText {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.skillDiv {
+  display: flex;
+  /* width: 100%; */
+  border-radius: 10px;
+  border: 1px solid var(--light-grey);
+  padding: 2rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.skillLeftDiv {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+.icon {
+  width: 2rem;
+  height: 3rem;
+}
+.text-bold {
+  font-size: var(--md);
+  font-weight: var(--bold);
+}
+.text-normal {
+  line-height: 21.6px;
+  font-weight: var(--thin);
+  color: var(--grey);
+  font-size: var(--xs);
+  margin-top: -0.5rem;
+}
+.buttonDiv {
+  border: none;
+  border-radius: 5px;
+  background: var(--dark-blue);
+  color: var(--white);
+  font-weight: var(--bold);
+  font-size: var(--sm);
+  padding: 0.75rem 2rem;
+  cursor: pointer;
+}

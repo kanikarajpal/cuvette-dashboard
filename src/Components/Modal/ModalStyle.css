@@ -1,0 +1,96 @@
+.modalContainer {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  height: 100vh;
+  background: var(--bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--white);
+  padding: 2.5rem;
+  border-radius: 0.5rem;
+}
+.modalMiddleDiv {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.modalUpperDiv {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 1.5rem;
+  border-bottom: 1.5px solid var(--light-grey);
+}
+.modalHeading {
+  font-size: var(--xxl);
+  font-weight: var(--bold);
+}
+.modalIcon {
+  width: 2rem;
+  height: 3rem;
+}
+.modalMiddleDiv {
+  width: 100%;
+  border-bottom: 1.5px solid var(--light-grey);
+}
+.modalItem {
+  display: flex;
+  justify-content: space-between;
+}
+.modalItemDiv {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  justify-content: center;
+  color: var(--grey);
+  font-size: var(--lg);
+}
+.logo-bg {
+  width: 1.5rem;
+  height: 1.5rem;
+  background: var(--dark-blue);
+  border-radius: 50%;
+  color: var(--white);
+}
+.inputDiv {
+  border-radius: 5px;
+  border: 1px solid var(--dark-blue);
+  font-weight: var(--bold);
+  color: var(--dark-blue);
+  padding: 0.5rem 1rem;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--md);
+  width: 9rem;
+}
+.lowerModalDiv {
+  display: flex;
+  justify-content: flex-end;
+  width: 90%;
+  padding: 2.25rem 2.25rem 0 0;
+}
+.lower-right-div {
+  display: flex;
+  gap: 2rem;
+}
+.cancel-btn {
+  background: var(--white);
+  border: 1px solid var(--dark-blue);
+  color: var(--dark-blue);
+}
+.buttonDiv {
+  padding: 0.6rem 1.2rem;
+}

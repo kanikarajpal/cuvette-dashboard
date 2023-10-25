@@ -1,0 +1,27 @@
+.container {
+  padding: 2.5rem 2.5rem 0 0;
+  border-right: 1.5px solid var(--light-grey);
+  width: 15%;
+}
+.innerDiv {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0rem 2.5rem;
+  cursor: pointer;
+}
+.mainDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  color: var(--grey);
+  font-weight: var(--bold);
+}
+.innerDiv:hover {
+  background: var(--lightest-grey);
+  border-radius: 0 6rem 6rem 0;
+}
+.activeDiv {
+  color: var(--blue);
+}

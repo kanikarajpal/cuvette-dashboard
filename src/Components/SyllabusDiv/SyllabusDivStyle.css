@@ -1,0 +1,33 @@
+.syllabusDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+
+  border-radius: 10px;
+  border: 1px solid var(--light-grey);
+  padding: 2rem;
+}
+
+.syllabusHeading {
+  text-align: left;
+  font-weight: var(--bold);
+  font-size: var(--md);
+  color: var(--primary-text);
+}
+.subHeading {
+  font-weight: var(--thin);
+  font-size: var(--md);
+  color: var(--grey);
+  text-align: left;
+}
+.percentageDiv {
+  font-weight: var(--bold);
+  font-size: var(--md);
+  color: var(--blue);
+}
+
+.progressBarDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
