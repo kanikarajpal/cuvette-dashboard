@@ -1,8 +1,6 @@
 import { SIDEBAR_ITEMS } from "../../utils/data";
-import { useState } from "react";
 import "./SidebarStyle.css";
 const Sidebar = () => {
-  const [activeState, setActiveState] = useState(SIDEBAR_ITEMS[1]);
   return (
     <div className="container">
       <div className="mainDiv">
@@ -11,7 +9,7 @@ const Sidebar = () => {
             return (
               <div
                 className={`innerDiv ${
-                  name === activeState.name ? "activeDiv" : ""
+                  name === SIDEBAR_ITEMS[1].name ? "activeDiv" : ""
                 }`}
               >
                 {icon}

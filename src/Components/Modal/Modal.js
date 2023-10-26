@@ -30,7 +30,7 @@ const Modal = ({ statistics, setStatistics, setOpenModal }) => {
       <div className="modal">
         <div className="modalUpperDiv">
           <p className="modalHeading">Update Scores</p>
-          <img src="/assets/html.png" className="modalIcon" />
+          <img src="/assets/html.png" alt="html" className="modalIcon" />
         </div>
         <div className="modalMiddleDiv">
           {data?.map((item, id) => {

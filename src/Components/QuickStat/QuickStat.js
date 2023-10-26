@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "./QuickStatStyle.css";
 const QuickStat = ({ statistics }) => {
   const total_score = 15;

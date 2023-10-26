@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { VictoryPie, VictoryAnimation } from "victory";
+import { VictoryPie } from "victory";
 import "./QuestionDivStyle.css";
 
 const QuestionDiv = ({ score }) => {

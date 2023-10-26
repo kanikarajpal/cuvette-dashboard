@@ -17,6 +17,7 @@ const SyllabusDiv = () => {
                   completed={item.percentage}
                   bgColor={item.primaryColor}
                   baseBgColor={item?.secondaryColor}
+                  animateOnRender={true}
                   maxCompleted={100}
                   isLabelVisible={false}
                   className="progressBar"
