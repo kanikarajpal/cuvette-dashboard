@@ -12,11 +12,10 @@ const QuestionDiv = ({ score }) => {
     percent: 25,
     data: getData(0),
   });
-  let setStateInterval;
 
   useEffect(() => {
     const percent = (score / 15) * 100;
-    setStateInterval = setInterval(() => {
+    const setStateInterval = setInterval(() => {
       setState({ percent, data: getData(percent) });
     }, 2000);
 
