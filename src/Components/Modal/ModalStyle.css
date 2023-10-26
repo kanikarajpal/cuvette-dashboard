@@ -76,6 +76,7 @@
   font-size: var(--md);
   width: 9rem;
 }
+
 .lowerModalDiv {
   display: flex;
   justify-content: flex-end;

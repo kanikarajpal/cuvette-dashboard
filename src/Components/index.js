@@ -1,9 +1,0 @@
-export { default as LandingPage } from "./LandingPage/LandingPage";
-export { default as MainContainer } from "./MainContainer/MainContainer";
-export { default as Navbar } from "./Navbar/Navbar";
-export { default as Sidebar } from "./sidebar/Sidebar";
-export { default as SkillDiv } from "./SkillDiv/SkillDiv";
-export { default as QuickStat } from "./QuickStat/QuickStat";
-export { default as ComparisonDiv } from "./ComparisonDiv/ComparisonDiv";
-export { default as SyllabusDiv } from "./SyllabusDiv/SyllabusDiv";
-export { default as QuestionDiv } from "./QuestionDiv/QuestionDiv";

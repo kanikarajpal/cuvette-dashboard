@@ -1,4 +1,5 @@
 import "./ComparisonDivStyle.css";
+import { useState, useEffect } from "react";
 import {
   VictoryChart,
   VictoryAxis,
@@ -7,16 +8,24 @@ import {
   VictoryTooltip,
 } from "victory";
 
-const data = [
-  { x: 0, y: 0 },
-  { x: 20, y: 3 },
-  { x: 40, y: 4 },
-  { x: 60, y: 2 },
-  { x: 80, y: 4 },
-  { x: 100, y: 5 },
-];
+const generateRandomData = () => {
+  return Array(5)
+    .fill()
+    .map((_, index) => ({
+      x: index * 20,
+      y: Math.floor(Math.random() * 5),
+    }));
+};
 
 const ComparisonDiv = ({ percentile }) => {
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    const randomData = generateRandomData();
+    const updatedData = [...randomData, { x: parseInt(percentile, 10), y: 5 }];
+    console.log(updatedData, "data");
+    setData(updatedData);
+  }, [percentile]);
   return (
     <div className="comparisonDiv">
       <div className="comparisonUpperDiv">
@@ -38,7 +47,7 @@ const ComparisonDiv = ({ percentile }) => {
       </div>
       <div className="comparisonLowerDiv">
         <VictoryChart height={200}>
-          <VictoryAxis // X-Axis
+          <VictoryAxis
             style={{
               axisLabel: { fill: "#9EAAB7" },
               tickLabels: { fill: "#9EAAB7" },
@@ -53,13 +62,19 @@ const ComparisonDiv = ({ percentile }) => {
             data={data}
             size={5}
             style={{ data: { fill: "#438AF6" } }}
-            labels={() => `Your score : ${percentile} Percentile  `}
+            labels={({ datum }) => {
+              if (datum.x === percentile) {
+                return `Your score: ${percentile} Percentile`;
+              } else {
+                return `Score: ${datum.x}`;
+              }
+            }}
             labelComponent={
               <VictoryTooltip
                 cornerRadius={5}
                 pointerLength={10}
                 flyoutStyle={{
-                  fill: "#1E272E", // Background color
+                  fill: "#1E272E",
                   stroke: "#1E272E",
                   strokeWidth: 1,
                 }}
